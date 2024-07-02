@@ -1,0 +1,75 @@
+Script started on 2024-07-02 13:46:10+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="92" LINES="48"]
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~[0;32m
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7mps aux[27mps aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.5  0.1 166400 13360 ?        Ss   13:14   0:11 /sbin/init
+root           2  0.0  0.0   2280  1304 ?        Sl   13:14   0:00 /init
+root           9  0.0  0.0   2308   144 ?        Sl   13:14   0:00 plan9 --control-socket 6 
+root          46  0.0  0.1  47808 15412 ?        S<s  13:14   0:00 /lib/systemd/systemd-jour
+root          68  0.0  0.0  22096  5852 ?        Ss   13:14   0:00 /lib/systemd/systemd-udev
+root          88  0.0  0.0   4496   172 ?        Ss   13:14   0:00 snapfuse /var/lib/snapd/s
+root          90  0.0  0.0   4784  1600 ?        Ss   13:14   0:00 snapfuse /var/lib/snapd/s
+root          91  0.0  0.0   4628   172 ?        Ss   13:14   0:00 snapfuse /var/lib/snapd/s
+root          92  0.0  0.0   4496   192 ?        Ss   13:14   0:00 snapfuse /var/lib/snapd/s
+root         100  0.1  0.0   4752  1832 ?        Ss   13:14   0:02 snapfuse /var/lib/snapd/s
+root         101  0.0  0.0   4776  1988 ?        Ss   13:14   0:01 snapfuse /var/lib/snapd/s
+root         102  0.0  0.0   4496   152 ?        Ss   13:14   0:00 snapfuse /var/lib/snapd/s
+root         103  0.0  0.0   4496   196 ?        Ss   13:14   0:00 snapfuse /var/lib/snapd/s
+systemd+     117  0.0  0.1  25540 12688 ?        Ss   13:14   0:00 /lib/systemd/systemd-reso
+root         155  0.0  0.0   6900  2912 ?        Ss   13:14   0:00 /usr/sbin/cron -f -P
+message+     157  0.0  0.0   8768  4832 ?        Ss   13:14   0:00 @dbus-daemon --system --a
+root         159  0.0  0.0   2788  1588 ?        S<   13:14   0:00 /usr/sbin/atopacctd
+root         165  0.0  0.2  38320 21384 ?        Ss   13:14   0:00 /usr/bin/python3 /usr/bin
+syslog       167  0.0  0.0 222404  5056 ?        Ssl  13:14   0:00 /usr/sbin/rsyslogd -n -iN
+root         179  0.0  0.6 1615956 53560 ?       Ssl  13:14   0:00 /usr/lib/snapd/snapd
+root         180  0.0  0.0  15340  7372 ?        Ss   13:14   0:00 /lib/systemd/systemd-logi
+root         181  0.0  0.0  15000  6932 ?        Ss   13:14   0:00 /lib/systemd/systemd-mach
+root         222  0.0  0.6 1285952 53432 ?       Ssl  13:14   0:00 /usr/local/bin/gitlab-run
+root         224  0.0  0.0   7376  3732 ?        Ss   13:14   0:00 /bin/bash /snap/ubuntu-de
+root         238  0.2  0.6 2168636 53992 ?       Ssl  13:14   0:04 /usr/bin/containerd
+root         240  0.0  0.2  19456 19344 ?        S<Ls 13:14   0:00 /usr/bin/atop -R -w /var/
+root         252  0.0  0.4 1624216 33220 ?       Ssl  13:14   0:00 /usr/sbin/libvirtd
+root         257  0.0  0.2 115560 23472 ?        Ssl  13:14   0:00 /usr/bin/python3 /usr/sha
+root         263  0.0  0.0   5804  1124 hvc0     Ss+  13:14   0:00 /sbin/agetty -o -p -- \u 
+root         278  0.0  0.0   6180  1120 tty1     Ss+  13:14   0:00 /sbin/agetty -o -p -- \u 
+root         286  0.0  0.1  15432  8676 ?        Ss   13:14   0:00 sshd: /usr/sbin/sshd -D [
+mysql        330  0.2  5.2 2308236 422768 ?      Ssl  13:14   0:05 /usr/sbin/mysqld
+root         350  0.2  1.2 2209664 99492 ?       Ssl  13:14   0:04 /usr/bin/dockerd -H fd://
+root         633  0.1  0.1 1236472 13684 ?       Sl   13:14   0:02 /usr/bin/containerd-shim-
+999          654  0.0  1.2 1475884 99288 ?       Ssl  13:14   0:00 mariadbd --default-authen
+root         686  0.1  1.2 1609500 98108 ?       Sl   13:14   0:03 /snap/ubuntu-desktop-inst
+root         768  0.0  0.0   2284   116 ?        Ss   13:14   0:00 /init
+root         772  0.0  0.0   2300   120 ?        R    13:14   0:00 /init
+grom         773  0.0  0.0   9440  6056 pts/0    Ss   13:14   0:00 -bash
+root         774  0.0  0.0   7532  5040 pts/1    Ss   13:14   0:00 /bin/login -f
+grom         794  0.0  0.1  17200  9640 ?        Ss   13:14   0:01 /lib/systemd/systemd --us
+grom         803  0.0  0.0 103632  3700 ?        S    13:14   0:00 (sd-pam)
+grom         829  0.0  0.0   8708  5356 pts/1    S+   13:14   0:00 -bash
+root         889  0.2  0.4  44176 37768 ?        S    13:15   0:05 python3 /snap/ubuntu-desk
+grom       19420  0.0  0.0   6076  1104 pts/0    D+   13:46   0:00 script ps-log.txt
+grom       19421  0.0  0.0   8668  5316 pts/2    Ss   13:46   0:00 bash -i
+grom       19515  0.0  0.0  10416  3656 pts/2    R+   13:46   0:00 ps aux
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~[0;32m
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7mps -u $USER[27m[C[C[C[C[C[Cps -u $USER\[K[K[K[K[K[Kgrom
+[?2004l    PID TTY          TIME CMD
+    773 pts/0    00:00:00 bash
+    794 ?        00:00:01 systemd
+    803 ?        00:00:00 (sd-pam)
+    829 pts/1    00:00:00 bash
+  19420 pts/0    00:00:00 script
+  19421 pts/2    00:00:00 bash
+  19695 pts/2    00:00:00 ps
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~[0;32m
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7mtop &[27mtop &
+[?2004l[1] 19795
+[?1l>
+[1]+  Остановлен    top
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~[0;32m
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7mkill %1[27mkill %1
+[?2004l[?1l>
+[1]+  Завершён        top
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~[0;32m
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7mexit[27mexit
+[?2004lexit
+
+Script done on 2024-07-02 13:46:59+03:00 [COMMAND_EXIT_CODE="0"]
