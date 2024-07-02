@@ -1,0 +1,29 @@
+Script started on 2024-07-02 15:11:10+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="92" LINES="48"]
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~/mywork/codeby-devops/lesson4[0;32m (lesson4)
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7msystemctl status nginx[27m[C[C[C[C[C[Csystemctl status nginx
+[?2004l[?1h=[0;1;32m●[0m nginx.service - The NGINX HTTP and reverse proxy server[m
+     Loaded: loaded (/etc/systemd/system/nginx.service; enabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (running)[0m since Tue 2024-07-02 15:05:51 MSK; 5min ago[m
+    Process: 70329 ExecStartPre=/usr/sbin/nginx -t (code=exited, status=0/SUCCESS)[m
+    Process: 70330 ExecStart=/usr/sbin/nginx (code=exited, status=0/SUCCESS)[m
+   Main PID: 70331 (nginx)[m
+      Tasks: 7 (limit: 9482)[m
+     Memory: 6.2M[m
+     CGroup: /system.slice/nginx.service[m
+             ├─70331 "nginx: master process /usr/sbin/nginx"[m
+             ├─70332 "nginx: worker process"[m
+             ├─70333 "nginx: worker process"[m
+             ├─70334 "nginx: worker process"[m
+             ├─70335 "nginx: worker process"[m
+             ├─70336 "nginx: worker process"[m
+             └─70337 "nginx: worker process"[m
+[m
+июл 02 15:05:51 ms systemd[1]: Starting The NGINX HTTP and reverse proxy server...[m
+июл 02 15:05:51 ms nginx[70329]: nginx: the configuration file /etc/nginx/nginx.conf syntax[m[7m>[27m
+июл 02 15:05:51 ms nginx[70329]: nginx: configuration file /etc/nginx/nginx.conf test is su[m[7m>[27m
+июл 02 15:05:51 ms systemd[1]: Started The NGINX HTTP and reverse proxy server.[m
+[7mlines 1-21/21 (END)[27m[K[K[?1l>[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~/mywork/codeby-devops/lesson4[0;32m (lesson4)
+[0;32m└─[0m[0;32m $[0m[0;32m [0m exit
+[?2004lexit
+
+Script done on 2024-07-02 15:11:34+03:00 [COMMAND_EXIT_CODE="0"]
