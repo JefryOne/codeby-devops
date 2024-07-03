@@ -1,0 +1,29 @@
+Script started on 2024-07-02 14:50:33+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="92" LINES="48"]
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~/mywork/codeby-devops[0;32m (lesson4)
+[0;32m└─[0m[0;32m $[0m[0;32m [0m exitkill %1[2Ptop &ps -u grom[4Paux-u grom[C[C[C[C[C[C[5Ptop &kill %1[3Pexit[K[7mjava -version[27m[C[C[C[C[C[Cjava -version
+[?2004ljava version "17.0.11" 2024-04-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.11+7-LTS-207)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.11+7-LTS-207, mixed mode, sharing)
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~/mywork/codeby-devops[0;32m (lesson4)
+[0;32m└─[0m[0;32m $[0m[0;32m [0m [7msudo update-alternatives --config java[27m[C[C[C[C[C[Csudo update-alternatives --config java
+[?2004l[sudo] пароль для grom: 
+Есть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      автоматический режим
+* 1            /opt/jdk-17.0.11/bin/java                     2         ручной режим
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 2
+update-alternatives: используется /usr/lib/jvm/java-21-openjdk-amd64/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~/mywork/codeby-devops[0;32m (lesson4)
+[0;32m└─[0m[0;32m $[0m[0;32m [0m sudo update-alternatives --config java[C[C[C[C[C[C[25Pjava -version
+[?2004lopenjdk version "21.0.3" 2024-04-16
+OpenJDK Runtime Environment (build 21.0.3+9-Ubuntu-1ubuntu122.04.1)
+OpenJDK 64-Bit Server VM (build 21.0.3+9-Ubuntu-1ubuntu122.04.1, mixed mode, sharing)
+[?2004h[0;32m[0m[0;32mgrom[0;36m @ [0;36mms ~/mywork/codeby-devops[0;32m (lesson4)
+[0;32m└─[0m[0;32m $[0m[0;32m [0m exit
+[?2004lexit
+
+Script done on 2024-07-02 14:51:22+03:00 [COMMAND_EXIT_CODE="0"]
