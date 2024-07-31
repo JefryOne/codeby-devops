@@ -1,0 +1,680 @@
+Script started on 2024-07-06 21:33:17+03:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004hroot@debian:~# [Kroot@debian:~# [Kroot@debian:~# [7mlxd init[27mlxd init
+[?2004lWould you like to use LXD clustering? (yes/no) [default=no]: 
+Do you want to configure a new storage pool? (yes/no) [default=yes]: 
+Name of the new storage pool [default=default]: 
+Name of the storage backend to use (ceph, dir, lvm, powerflex, btrfs) [default=btrfs]: dir
+Would you like to connect to a MAAS server? (yes/no) [default=no]: 
+Would you like to create a new local network bridge? (yes/no) [default=yes]: 
+What should the new bridge be called? [default=lxdbr0]: 
+What IPv4 address should be used? (CIDR subnet notation, “auto” or “none”) [default=auto]: 
+What IPv6 address should be used? (CIDR subnet notation, “auto” or “none”) [default=auto]: 
+Would you like the LXD server to be available over the network? (yes/no) [default=no]: 
+Would you like stale cached images to be updated automatically? (yes/no) [default=yes]: 
+Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]: 
+[?2004hroot@debian:~# [7mlxc launch images:debian/buster debian[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clxc launch images:debian/buster debian
+[?2004lCreating debian
+Retrieving image: metadata: 100% (2.12GB/s)                                            Retrieving image: rootfs: 1% (1.03MB/s)                                            Retrieving image: rootfs: 2% (1.29MB/s)                                            Retrieving image: rootfs: 3% (1.50MB/s)                                            Retrieving image: rootfs: 4% (1.70MB/s)                                            Retrieving image: rootfs: 5% (1.90MB/s)                                            Retrieving image: rootfs: 6% (2.09MB/s)                                            Retrieving image: rootfs: 7% (2.25MB/s)                                            Retrieving image: rootfs: 8% (2.42MB/s)                                            Retrieving image: rootfs: 9% (2.57MB/s)                                            Retrieving image: rootfs: 10% (2.65MB/s)                                            Retrieving image: rootfs: 10% (2.74MB/s)                                            Retrieving image: rootfs: 11% (2.81MB/s)                                            Retrieving image: rootfs: 12% (2.88MB/s)                                            Retrieving image: rootfs: 13% (2.90MB/s)                                            Retrieving image: rootfs: 14% (2.90MB/s)                                            Retrieving image: rootfs: 15% (2.89MB/s)                                            Retrieving image: rootfs: 16% (2.87MB/s)                                            Retrieving image: rootfs: 17% (2.85MB/s)                                            Retrieving image: rootfs: 18% (2.81MB/s)                                            Retrieving image: rootfs: 19% (2.81MB/s)                                            Retrieving image: rootfs: 20% (2.81MB/s)                                            Retrieving image: rootfs: 21% (2.81MB/s)                                            Retrieving image: rootfs: 22% (2.81MB/s)                                            Retrieving image: rootfs: 23% (2.81MB/s)                                            Retrieving image: rootfs: 24% (2.81MB/s)                                            Retrieving image: rootfs: 25% (2.83MB/s)                                            Retrieving image: rootfs: 26% (2.83MB/s)                                            Retrieving image: rootfs: 27% (2.83MB/s)                                            Retrieving image: rootfs: 28% (2.85MB/s)                                            Retrieving image: rootfs: 29% (2.85MB/s)                                            Retrieving image: rootfs: 30% (2.86MB/s)                                            Retrieving image: rootfs: 31% (2.87MB/s)                                            Retrieving image: rootfs: 32% (2.89MB/s)                                            Retrieving image: rootfs: 33% (2.89MB/s)                                            Retrieving image: rootfs: 34% (2.90MB/s)                                            Retrieving image: rootfs: 35% (2.91MB/s)                                            Retrieving image: rootfs: 36% (2.92MB/s)                                            Retrieving image: rootfs: 37% (2.94MB/s)                                            Retrieving image: rootfs: 38% (2.95MB/s)                                            Retrieving image: rootfs: 39% (2.96MB/s)                                            Retrieving image: rootfs: 40% (2.97MB/s)                                            Retrieving image: rootfs: 41% (2.98MB/s)                                            Retrieving image: rootfs: 41% (3.00MB/s)                                            Retrieving image: rootfs: 42% (3.01MB/s)                                            Retrieving image: rootfs: 43% (3.02MB/s)                                            Retrieving image: rootfs: 44% (3.03MB/s)                                            Retrieving image: rootfs: 45% (3.03MB/s)                                            Retrieving image: rootfs: 46% (3.05MB/s)                                            Retrieving image: rootfs: 47% (3.06MB/s)                                            Retrieving image: rootfs: 48% (3.07MB/s)                                            Retrieving image: rootfs: 49% (3.06MB/s)                                            Retrieving image: rootfs: 50% (3.06MB/s)                                            Retrieving image: rootfs: 51% (3.05MB/s)                                            Retrieving image: rootfs: 51% (3.04MB/s)                                            Retrieving image: rootfs: 52% (3.03MB/s)                                            Retrieving image: rootfs: 53% (3.01MB/s)                                            Retrieving image: rootfs: 54% (2.99MB/s)                                            Retrieving image: rootfs: 55% (2.97MB/s)                                            Retrieving image: rootfs: 56% (2.95MB/s)                                            Retrieving image: rootfs: 57% (2.93MB/s)                                            Retrieving image: rootfs: 58% (2.91MB/s)                                            Retrieving image: rootfs: 59% (2.89MB/s)                                            Retrieving image: rootfs: 60% (2.87MB/s)                                            Retrieving image: rootfs: 61% (2.86MB/s)                                            Retrieving image: rootfs: 61% (2.85MB/s)                                            Retrieving image: rootfs: 62% (2.84MB/s)                                            Retrieving image: rootfs: 63% (2.83MB/s)                                            Retrieving image: rootfs: 64% (2.83MB/s)                                            Retrieving image: rootfs: 65% (2.82MB/s)                                            Retrieving image: rootfs: 66% (2.82MB/s)                                            Retrieving image: rootfs: 67% (2.81MB/s)                                            Retrieving image: rootfs: 68% (2.79MB/s)                                            Retrieving image: rootfs: 69% (2.78MB/s)                                            Retrieving image: rootfs: 70% (2.77MB/s)                                            Retrieving image: rootfs: 71% (2.76MB/s)                                            Retrieving image: rootfs: 71% (2.75MB/s)                                            Retrieving image: rootfs: 72% (2.75MB/s)                                            Retrieving image: rootfs: 73% (2.75MB/s)                                            Retrieving image: rootfs: 74% (2.75MB/s)                                            Retrieving image: rootfs: 75% (2.74MB/s)                                            Retrieving image: rootfs: 76% (2.73MB/s)                                            Retrieving image: rootfs: 77% (2.72MB/s)                                            Retrieving image: rootfs: 78% (2.71MB/s)                                            Retrieving image: rootfs: 79% (2.70MB/s)                                            Retrieving image: rootfs: 80% (2.69MB/s)                                            Retrieving image: rootfs: 81% (2.68MB/s)                                            Retrieving image: rootfs: 81% (2.66MB/s)                                            Retrieving image: rootfs: 82% (2.64MB/s)                                            Retrieving image: rootfs: 83% (2.63MB/s)                                            Retrieving image: rootfs: 84% (2.62MB/s)                                            Retrieving image: rootfs: 85% (2.61MB/s)                                            Retrieving image: rootfs: 86% (2.61MB/s)                                            Retrieving image: rootfs: 87% (2.60MB/s)                                            Retrieving image: rootfs: 88% (2.58MB/s)                                            Retrieving image: rootfs: 89% (2.57MB/s)                                            Retrieving image: rootfs: 90% (2.56MB/s)                                            Retrieving image: rootfs: 91% (2.55MB/s)                                            Retrieving image: rootfs: 92% (2.54MB/s)                                            Retrieving image: rootfs: 93% (2.54MB/s)                                            Retrieving image: rootfs: 94% (2.53MB/s)                                            Retrieving image: rootfs: 95% (2.52MB/s)                                            Retrieving image: rootfs: 96% (2.51MB/s)                                            Retrieving image: rootfs: 97% (2.51MB/s)                                            Retrieving image: rootfs: 98% (2.50MB/s)                                            Retrieving image: rootfs: 99% (2.49MB/s)                                            Retrieving image: rootfs: 100% (2.49MB/s)                                            Retrieving image: Unpack: 100% (985.51MB/s)                                            Retrieving image: Unpack: 100% (985.51MB/s)                                            Starting debian
+Remapping container filesystem                                                                                             [?2004hroot@debian:~# [7mlxc list[27mlxc list
+[?2004l+--------+---------+----------------------+-----------------------------------------------+-----------+-----------+
+|  NAME  |  STATE  |         IPV4         |                     IPV6                      |   TYPE    | SNAPSHOTS |
++--------+---------+----------------------+-----------------------------------------------+-----------+-----------+
+| debian | RUNNING | 10.189.222.52 (eth0) | fd42:9d4a:4104:8425:216:3eff:fe77:ce4a (eth0) | CONTAINER | 0         |
++--------+---------+----------------------+-----------------------------------------------+-----------+-----------+
+[?2004hroot@debian:~# [7mlxc network list[27mlxc network list
+[?2004l+--------+----------+---------+-----------------+---------------------------+-------------+---------+---------+
+|  NAME  |   TYPE   | MANAGED |      IPV4       |           IPV6            | DESCRIPTION | USED BY |  STATE  |
++--------+----------+---------+-----------------+---------------------------+-------------+---------+---------+
+| enp0s3 | physical | NO      |                 |                           |             | 0       |         |
++--------+----------+---------+-----------------+---------------------------+-------------+---------+---------+
+| lxdbr0 | bridge   | YES     | 10.189.222.1/24 | fd42:9d4a:4104:8425::1/64 |             | 2       | CREATED |
++--------+----------+---------+-----------------+---------------------------+-------------+---------+---------+
+[?2004hroot@debian:~# 
+
+[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7miptables -A FORWARD -i lxdbr0 -o enp0s3 -j ACCEPT[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ciptables -A FORWARD -i lxdbr0 -o enp0s3 -j ACCEPT
+[?2004l[?2004hroot@debian:~# 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7miptables -A FORWARD -i enp0s3 -o lxdbr0 -m state --state ESTABLISHED,RELATED -j ACCEPT[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ciptables -A FORWARD -i enp0s3 -o lxdbr0 -m state --state ESTABLISHED,RELATED -j ACCEPT
+[?2004l[?2004hroot@debian:~# [7miptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ciptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+[?2004l[?2004hroot@debian:~# [7mlxc exec debian -- apt install apache2[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clxc exec debian -- apt install apache2
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 55%Reading package lists... 55%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 96%Reading package lists... 96%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils bzip2 file libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
+  libbrotli1 libcurl4 libgdbm-compat4 libgdbm6 libicu63 libjansson4 libldap-2.4-2 libldap-common liblua5.2-0
+  libmagic-mgc libmagic1 libnghttp2-14 libperl5.28 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libsqlite3-0 libssh2-1 libxml2 mime-support perl perl-modules-5.28 publicsuffix ssl-cert xz-utils
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser bzip2-doc gdbm-l10n sensible-utils
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl make libb-debug-perl
+  liblocale-codes-perl openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils bzip2 file libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap libbrotli1 libcurl4 libgdbm-compat4 libgdbm6 libicu63 libjansson4 libldap-2.4-2 libldap-common
+  liblua5.2-0 libmagic-mgc libmagic1 libnghttp2-14 libperl5.28 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libsqlite3-0 libssh2-1 libxml2 mime-support perl perl-modules-5.28 publicsuffix ssl-cert
+  xz-utils
+0 upgraded, 37 newly installed, 0 to remove and 0 not upgraded.
+Need to get 21.6 MB of archives.
+After this operation, 102 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m[33m0% [Connecting to debian.map.fastlydns.net][0m[33m0% [Connecting to debian.map.fastlydns.net (146.75.118.132)][0m                                                            Get:1 http://deb.debian.org/debian buster/main amd64 perl-modules-5.28 all 5.28.1-6+deb10u1 [2873 kB]
+[33m                                                            0% [1 perl-modules-5.28 0 B/2873 kB 0%][0m[33m8% [1 perl-modules-5.28 2031 kB/2873 kB 71%][0m[33m                                            11% [Working][0m             Get:2 http://deb.debian.org/debian buster/main amd64 libgdbm6 amd64 1.18.1-4 [64.7 kB]
+[33m11% [2 libgdbm6 0 B/64.7 kB 0%][0m[33m                               12% [Working][0m             Get:3 http://deb.debian.org/debian buster/main amd64 libgdbm-compat4 amd64 1.18.1-4 [44.1 kB]
+[33m12% [3 libgdbm-compat4 0 B/44.1 kB 0%][0m[33m                                      13% [Working][0m             Get:4 http://deb.debian.org/debian buster/main amd64 libperl5.28 amd64 5.28.1-6+deb10u1 [3894 kB]
+[33m13% [4 libperl5.28 0 B/3894 kB 0%][0m[33m24% [4 libperl5.28 2939 kB/3894 kB 75%][0m[33m                                       28% [Working][0m             Get:5 http://deb.debian.org/debian buster/main amd64 perl amd64 5.28.1-6+deb10u1 [204 kB]
+[33m28% [5 perl 0 B/204 kB 0%][0m[33m                          29% [Working][0m             Get:6 http://deb.debian.org/debian buster/main amd64 libapr1 amd64 1.6.5-1+b1 [102 kB]
+[33m29% [6 libapr1 0 B/102 kB 0%][0m[33m                             30% [Working][0m             Get:7 http://deb.debian.org/debian-security buster/updates/main amd64 libaprutil1 amd64 1.6.1-4+deb10u1 [91.9 kB]
+[33m30% [7 libaprutil1 0 B/91.9 kB 0%][0m[33m                                  31% [Working][0m             Get:8 http://deb.debian.org/debian-security buster/updates/main amd64 libsqlite3-0 amd64 3.27.2-3+deb10u2 [641 kB]
+[33m31% [8 libsqlite3-0 0 B/641 kB 0%][0m[33m                                  34% [Working][0m             Get:9 http://deb.debian.org/debian-security buster/updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-4+deb10u1 [18.9 kB]
+[33m34% [9 libaprutil1-dbd-sqlite3 0 B/18.9 kB 0%][0m[33m                                              34% [Working][0m             Get:10 http://deb.debian.org/debian buster/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-1+deb10u2 [69.2 kB]
+[33m34% [10 libsasl2-modules-db 0 B/69.2 kB 0%][0m[33m                                           35% [Working][0m             Get:11 http://deb.debian.org/debian buster/main amd64 libsasl2-2 amd64 2.1.27+dfsg-1+deb10u2 [106 kB]
+[33m35% [11 libsasl2-2 0 B/106 kB 0%][0m[33m                                 36% [Working][0m             Get:12 http://deb.debian.org/debian buster/main amd64 libldap-common all 2.4.47+dfsg-3+deb10u7 [90.1 kB]
+[33m36% [12 libldap-common 0 B/90.1 kB 0%][0m[33m                                      37% [Working][0m             Get:13 http://deb.debian.org/debian buster/main amd64 libldap-2.4-2 amd64 2.4.47+dfsg-3+deb10u7 [224 kB]
+[33m37% [13 libldap-2.4-2 0 B/224 kB 0%][0m[33m                                    38% [Working][0m             Get:14 http://deb.debian.org/debian-security buster/updates/main amd64 libaprutil1-ldap amd64 1.6.1-4+deb10u1 [17.0 kB]
+[33m38% [14 libaprutil1-ldap 0 B/17.0 kB 0%][0m[33m                                        39% [Working][0m             Get:15 http://deb.debian.org/debian buster/main amd64 libbrotli1 amd64 1.0.7-2+deb10u1 [269 kB]
+[33m39% [15 libbrotli1 0 B/269 kB 0%][0m[33m                                 40% [Working][0m             Get:16 http://deb.debian.org/debian-security buster/updates/main amd64 libnghttp2-14 amd64 1.36.0-2+deb10u3 [86.1 kB]
+[33m40% [16 libnghttp2-14 0 B/86.1 kB 0%][0m[33m                                     41% [Working][0m             Get:17 http://deb.debian.org/debian buster/main amd64 libpsl5 amd64 0.20.2-2 [53.7 kB]
+[33m41% [17 libpsl5 0 B/53.7 kB 0%][0m[33m                               42% [Working][0m             Get:18 http://deb.debian.org/debian buster/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2 [60.5 kB]
+[33m42% [18 librtmp1 0 B/60.5 kB 0%][0m[33m                                43% [Working][0m             Get:19 http://deb.debian.org/debian-security buster/updates/main amd64 libssh2-1 amd64 1.8.0-2.1+deb10u1 [141 kB]
+[33m43% [19 libssh2-1 0 B/141 kB 0%][0m[33m                                44% [Working][0m             Get:20 http://deb.debian.org/debian-security buster/updates/main amd64 libcurl4 amd64 7.64.0-4+deb10u9 [336 kB]
+[33m44% [20 libcurl4 0 B/336 kB 0%][0m[33m                               46% [Working][0m             Get:21 http://deb.debian.org/debian buster/main amd64 libjansson4 amd64 2.12-1 [38.0 kB]
+[33m46% [21 libjansson4 0 B/38.0 kB 0%][0m[33m                                   46% [Working][0m             Get:22 http://deb.debian.org/debian buster/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2 [110 kB]
+[33m46% [22 liblua5.2-0 0 B/110 kB 0%][0m[33m                                  47% [Working][0m             Get:23 http://deb.debian.org/debian buster/main amd64 libicu63 amd64 63.1-6+deb10u3 [8293 kB]
+[33m47% [23 libicu63 0 B/8293 kB 0%][0m[33m57% [23 libicu63 2686 kB/8293 kB 32%][0m[33m68% [23 libicu63 5689 kB/8293 kB 69%][0m[33m                                     78% [Working][0m             Get:24 http://deb.debian.org/debian-security buster/updates/main amd64 libxml2 amd64 2.9.4+dfsg1-7+deb10u6 [690 kB]
+[33m78% [24 libxml2 0 B/690 kB 0%][0m[33m                              82% [Working][0m             Get:25 http://deb.debian.org/debian-security buster/updates/main amd64 apache2-bin amd64 2.4.59-1~deb10u1 [1434 kB]
+[33m82% [25 apache2-bin 0 B/1434 kB 0%][0m[33m                                   87% [Working][0m             Get:26 http://deb.debian.org/debian-security buster/updates/main amd64 apache2-data all 2.4.59-1~deb10u1 [165 kB]
+[33m87% [26 apache2-data 0 B/165 kB 0%][0m[33m                                   89% [Working][0m             Get:27 http://deb.debian.org/debian-security buster/updates/main amd64 apache2-utils amd64 2.4.59-1~deb10u1 [270 kB]
+[33m89% [27 apache2-utils 0 B/270 kB 0%][0m[33m                                    90% [Working][0m             Get:28 http://deb.debian.org/debian buster/main amd64 mime-support all 3.62 [37.2 kB]
+[33m90% [28 mime-support 0 B/37.2 kB 0%][0m[33m                                    91% [Working][0m             Get:29 http://deb.debian.org/debian-security buster/updates/main amd64 apache2 amd64 2.4.59-1~deb10u1 [283 kB]
+[33m91% [29 apache2 0 B/283 kB 0%][0m[33m                              92% [Working][0m             Get:30 http://deb.debian.org/debian-security buster/updates/main amd64 bzip2 amd64 1.0.6-9.2~deb10u2 [48.5 kB]
+[33m92% [30 bzip2 0 B/48.5 kB 0%][0m[33m                             93% [Working][0m             Get:31 http://deb.debian.org/debian buster/main amd64 libmagic-mgc amd64 1:5.35-4+deb10u2 [242 kB]
+[33m93% [31 libmagic-mgc 0 B/242 kB 0%][0m[33m                                   94% [Working][0m             Get:32 http://deb.debian.org/debian buster/main amd64 libmagic1 amd64 1:5.35-4+deb10u2 [118 kB]
+[33m94% [32 libmagic1 0 B/118 kB 0%][0m[33m                                95% [Working][0m             Get:33 http://deb.debian.org/debian buster/main amd64 file amd64 1:5.35-4+deb10u2 [66.4 kB]
+[33m95% [33 file 0 B/66.4 kB 0%][0m[33m                            96% [Working][0m             Get:34 http://deb.debian.org/debian buster/main amd64 xz-utils amd64 5.2.4-1+deb10u1 [183 kB]
+[33m96% [34 xz-utils 0 B/183 kB 0%][0m[33m                               97% [Working][0m             Get:35 http://deb.debian.org/debian buster/main amd64 libsasl2-modules amd64 2.1.27+dfsg-1+deb10u2 [104 kB]
+[33m97% [35 libsasl2-modules 0 B/104 kB 0%][0m[33m                                       98% [Working][0m             Get:36 http://deb.debian.org/debian buster/main amd64 publicsuffix all 20220811.1734-0+deb10u1 [127 kB]
+[33m98% [36 publicsuffix 0 B/127 kB 0%][0m[33m                                   99% [Working][0m             Get:37 http://deb.debian.org/debian buster/main amd64 ssl-cert all 1.0.39 [20.8 kB]
+[33m99% [37 ssl-cert 0 B/20.8 kB 0%][0m[33m                                100% [Working][0m              Fetched 21.6 MB in 5s (4079 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;61r8[1ASelecting previously unselected package perl-modules-5.28.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11457 files and directories currently installed.)
+Preparing to unpack .../00-perl-modules-5.28_5.28.1-6+deb10u1_all.deb ...
+7[62;0f[42m[30mProgress: [  0%][49m[39m [...............................................................................................] 8Unpacking perl-modules-5.28 (5.28.1-6+deb10u1) ...
+7[62;0f[42m[30mProgress: [  1%][49m[39m [#..............................................................................................] 8Selecting previously unselected package libgdbm6:amd64.
+Preparing to unpack .../01-libgdbm6_1.18.1-4_amd64.deb ...
+7[62;0f[42m[30mProgress: [  2%][49m[39m [#..............................................................................................] 8Unpacking libgdbm6:amd64 (1.18.1-4) ...
+Selecting previously unselected package libgdbm-compat4:amd64.
+Preparing to unpack .../02-libgdbm-compat4_1.18.1-4_amd64.deb ...
+7[62;0f[42m[30mProgress: [  3%][49m[39m [###............................................................................................] 8Unpacking libgdbm-compat4:amd64 (1.18.1-4) ...
+7[62;0f[42m[30mProgress: [  4%][49m[39m [###............................................................................................] 8Selecting previously unselected package libperl5.28:amd64.
+Preparing to unpack .../03-libperl5.28_5.28.1-6+deb10u1_amd64.deb ...
+Unpacking libperl5.28:amd64 (5.28.1-6+deb10u1) ...
+7[62;0f[42m[30mProgress: [  5%][49m[39m [#####..........................................................................................] 8Selecting previously unselected package perl.
+Preparing to unpack .../04-perl_5.28.1-6+deb10u1_amd64.deb ...
+7[62;0f[42m[30mProgress: [  6%][49m[39m [#####..........................................................................................] 8Unpacking perl (5.28.1-6+deb10u1) ...
+Selecting previously unselected package libapr1:amd64.
+Preparing to unpack .../05-libapr1_1.6.5-1+b1_amd64.deb ...
+7[62;0f[42m[30mProgress: [  7%][49m[39m [#######........................................................................................] 8Unpacking libapr1:amd64 (1.6.5-1+b1) ...
+7[62;0f[42m[30mProgress: [  8%][49m[39m [#######........................................................................................] 8Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../06-libaprutil1_1.6.1-4+deb10u1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-4+deb10u1) ...
+7[62;0f[42m[30mProgress: [  9%][49m[39m [########.......................................................................................] 8Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../07-libsqlite3-0_3.27.2-3+deb10u2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 10%][49m[39m [#########......................................................................................] 8Unpacking libsqlite3-0:amd64 (3.27.2-3+deb10u2) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../08-libaprutil1-dbd-sqlite3_1.6.1-4+deb10u1_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 11%][49m[39m [##########.....................................................................................] 8Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-4+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 12%][49m[39m [###########....................................................................................] 8Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../09-libsasl2-modules-db_2.1.27+dfsg-1+deb10u2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 13%][49m[39m [############...................................................................................] 8Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../10-libsasl2-2_2.1.27+dfsg-1+deb10u2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 14%][49m[39m [#############..................................................................................] 8Unpacking libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u2) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../11-libldap-common_2.4.47+dfsg-3+deb10u7_all.deb ...
+7[62;0f[42m[30mProgress: [ 15%][49m[39m [##############.................................................................................] 8Unpacking libldap-common (2.4.47+dfsg-3+deb10u7) ...
+7[62;0f[42m[30mProgress: [ 16%][49m[39m [###############................................................................................] 8Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../12-libldap-2.4-2_2.4.47+dfsg-3+deb10u7_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.47+dfsg-3+deb10u7) ...
+7[62;0f[42m[30mProgress: [ 17%][49m[39m [################...............................................................................] 8Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../13-libaprutil1-ldap_1.6.1-4+deb10u1_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 18%][49m[39m [#################..............................................................................] 8Unpacking libaprutil1-ldap:amd64 (1.6.1-4+deb10u1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../14-libbrotli1_1.0.7-2+deb10u1_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 19%][49m[39m [##################.............................................................................] 8Unpacking libbrotli1:amd64 (1.0.7-2+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 20%][49m[39m [###################............................................................................] 8Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../15-libnghttp2-14_1.36.0-2+deb10u3_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.36.0-2+deb10u3) ...
+7[62;0f[42m[30mProgress: [ 21%][49m[39m [####################...........................................................................] 8Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../16-libpsl5_0.20.2-2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 22%][49m[39m [#####################..........................................................................] 8Unpacking libpsl5:amd64 (0.20.2-2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../17-librtmp1_2.4+20151223.gitfa8646d.1-2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 23%][49m[39m [######################.........................................................................] 8Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2) ...
+7[62;0f[42m[30mProgress: [ 24%][49m[39m [######################.........................................................................] 8Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../18-libssh2-1_1.8.0-2.1+deb10u1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.8.0-2.1+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 26%][49m[39m [########################.......................................................................] 8Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../19-libcurl4_7.64.0-4+deb10u9_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 26%][49m[39m [########################.......................................................................] 8Unpacking libcurl4:amd64 (7.64.0-4+deb10u9) ...
+Selecting previously unselected package libjansson4:amd64.
+Preparing to unpack .../20-libjansson4_2.12-1_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 28%][49m[39m [##########################.....................................................................] 8Unpacking libjansson4:amd64 (2.12-1) ...
+7[62;0f[42m[30mProgress: [ 28%][49m[39m [##########################.....................................................................] 8Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../21-liblua5.2-0_5.2.4-1.1+b2_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
+7[62;0f[42m[30mProgress: [ 30%][49m[39m [############################...................................................................] 8Selecting previously unselected package libicu63:amd64.
+Preparing to unpack .../22-libicu63_63.1-6+deb10u3_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 30%][49m[39m [############################...................................................................] 8Unpacking libicu63:amd64 (63.1-6+deb10u3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../23-libxml2_2.9.4+dfsg1-7+deb10u6_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 32%][49m[39m [#############################..................................................................] 8Unpacking libxml2:amd64 (2.9.4+dfsg1-7+deb10u6) ...
+7[62;0f[42m[30mProgress: [ 32%][49m[39m [##############################.................................................................] 8Selecting previously unselected package apache2-bin.
+Preparing to unpack .../24-apache2-bin_2.4.59-1~deb10u1_amd64.deb ...
+Unpacking apache2-bin (2.4.59-1~deb10u1) ...
+7[62;0f[42m[30mProgress: [ 34%][49m[39m [###############################................................................................] 8Selecting previously unselected package apache2-data.
+Preparing to unpack .../25-apache2-data_2.4.59-1~deb10u1_all.deb ...
+7[62;0f[42m[30mProgress: [ 34%][49m[39m [################################...............................................................] 8Unpacking apache2-data (2.4.59-1~deb10u1) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../26-apache2-utils_2.4.59-1~deb10u1_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 36%][49m[39m [#################################..............................................................] 8Unpacking apache2-utils (2.4.59-1~deb10u1) ...
+7[62;0f[42m[30mProgress: [ 36%][49m[39m [##################################.............................................................] 8Selecting previously unselected package mime-support.
+Preparing to unpack .../27-mime-support_3.62_all.deb ...
+Unpacking mime-support (3.62) ...
+7[62;0f[42m[30mProgress: [ 38%][49m[39m [###################################............................................................] 8Selecting previously unselected package apache2.
+Preparing to unpack .../28-apache2_2.4.59-1~deb10u1_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 38%][49m[39m [####################################...........................................................] 8Unpacking apache2 (2.4.59-1~deb10u1) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../29-bzip2_1.0.6-9.2~deb10u2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 40%][49m[39m [#####################################..........................................................] 8Unpacking bzip2 (1.0.6-9.2~deb10u2) ...
+7[62;0f[42m[30mProgress: [ 40%][49m[39m [######################################.........................................................] 8Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../30-libmagic-mgc_1%3a5.35-4+deb10u2_amd64.deb ...
+Unpacking libmagic-mgc (1:5.35-4+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 42%][49m[39m [#######################################........................................................] 8Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../31-libmagic1_1%3a5.35-4+deb10u2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 42%][49m[39m [########################################.......................................................] 8Unpacking libmagic1:amd64 (1:5.35-4+deb10u2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../32-file_1%3a5.35-4+deb10u2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 44%][49m[39m [#########################################......................................................] 8Unpacking file (1:5.35-4+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 44%][49m[39m [##########################################.....................................................] 8Selecting previously unselected package xz-utils.
+Preparing to unpack .../33-xz-utils_5.2.4-1+deb10u1_amd64.deb ...
+Unpacking xz-utils (5.2.4-1+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 46%][49m[39m [###########################################....................................................] 8Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../34-libsasl2-modules_2.1.27+dfsg-1+deb10u2_amd64.deb ...
+7[62;0f[42m[30mProgress: [ 46%][49m[39m [###########################################....................................................] 8Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-1+deb10u2) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../35-publicsuffix_20220811.1734-0+deb10u1_all.deb ...
+7[62;0f[42m[30mProgress: [ 48%][49m[39m [#############################################..................................................] 8Unpacking publicsuffix (20220811.1734-0+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 48%][49m[39m [#############################################..................................................] 8Selecting previously unselected package ssl-cert.
+Preparing to unpack .../36-ssl-cert_1.0.39_all.deb ...
+Unpacking ssl-cert (1.0.39) ...
+7[62;0f[42m[30mProgress: [ 50%][49m[39m [###############################################................................................] 8Setting up perl-modules-5.28 (5.28.1-6+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 50%][49m[39m [###############################################................................................] 87[62;0f[42m[30mProgress: [ 51%][49m[39m [################################################...............................................] 8Setting up libpsl5:amd64 (0.20.2-2) ...
+7[62;0f[42m[30mProgress: [ 52%][49m[39m [#################################################..............................................] 8Setting up mime-support (3.62) ...
+7[62;0f[42m[30mProgress: [ 53%][49m[39m [##################################################.............................................] 8Setting up libmagic-mgc (1:5.35-4+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 54%][49m[39m [###################################################............................................] 87[62;0f[42m[30mProgress: [ 55%][49m[39m [####################################################...........................................] 8Setting up libbrotli1:amd64 (1.0.7-2+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 56%][49m[39m [#####################################################..........................................] 8Setting up libsqlite3-0:amd64 (3.27.2-3+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 57%][49m[39m [######################################################.........................................] 8Setting up libsasl2-modules:amd64 (2.1.27+dfsg-1+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 58%][49m[39m [#######################################################........................................] 87[62;0f[42m[30mProgress: [ 59%][49m[39m [########################################################.......................................] 8Setting up libnghttp2-14:amd64 (1.36.0-2+deb10u3) ...
+7[62;0f[42m[30mProgress: [ 60%][49m[39m [#########################################################......................................] 8Setting up libmagic1:amd64 (1:5.35-4+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 61%][49m[39m [##########################################################.....................................] 8Setting up libapr1:amd64 (1.6.5-1+b1) ...
+7[62;0f[42m[30mProgress: [ 62%][49m[39m [###########################################################....................................] 87[62;0f[42m[30mProgress: [ 63%][49m[39m [###########################################################....................................] 8Setting up file (1:5.35-4+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 64%][49m[39m [#############################################################..................................] 8Setting up bzip2 (1.0.6-9.2~deb10u2) ...
+7[62;0f[42m[30mProgress: [ 65%][49m[39m [#############################################################..................................] 8Setting up libldap-common (2.4.47+dfsg-3+deb10u7) ...
+7[62;0f[42m[30mProgress: [ 66%][49m[39m [###############################################################................................] 87[62;0f[42m[30mProgress: [ 67%][49m[39m [###############################################################................................] 8Setting up libicu63:amd64 (63.1-6+deb10u3) ...
+7[62;0f[42m[30mProgress: [ 68%][49m[39m [#################################################################..............................] 8Setting up libjansson4:amd64 (2.12-1) ...
+7[62;0f[42m[30mProgress: [ 69%][49m[39m [#################################################################..............................] 8Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 70%][49m[39m [##################################################################.............................] 87[62;0f[42m[30mProgress: [ 71%][49m[39m [###################################################################............................] 8Setting up ssl-cert (1.0.39) ...
+7[62;0f[42m[30mProgress: [ 72%][49m[39m [####################################################################...........................] 8Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2) ...
+7[62;0f[42m[30mProgress: [ 73%][49m[39m [#####################################################################..........................] 8Setting up xz-utils (5.2.4-1+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 74%][49m[39m [######################################################################.........................] 8update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+7[62;0f[42m[30mProgress: [ 75%][49m[39m [#######################################################################........................] 8Setting up libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u2) ...
+7[62;0f[42m[30mProgress: [ 77%][49m[39m [########################################################################.......................] 8Setting up liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
+7[62;0f[42m[30mProgress: [ 77%][49m[39m [#########################################################################......................] 8Setting up libssh2-1:amd64 (1.8.0-2.1+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 79%][49m[39m [##########################################################################.....................] 87[62;0f[42m[30mProgress: [ 79%][49m[39m [###########################################################################....................] 8Setting up apache2-data (2.4.59-1~deb10u1) ...
+7[62;0f[42m[30mProgress: [ 81%][49m[39m [############################################################################...................] 8Setting up publicsuffix (20220811.1734-0+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 81%][49m[39m [#############################################################################..................] 8Setting up libxml2:amd64 (2.9.4+dfsg1-7+deb10u6) ...
+7[62;0f[42m[30mProgress: [ 83%][49m[39m [##############################################################################.................] 87[62;0f[42m[30mProgress: [ 83%][49m[39m [###############################################################################................] 8Setting up libgdbm6:amd64 (1.18.1-4) ...
+7[62;0f[42m[30mProgress: [ 85%][49m[39m [################################################################################...............] 8Setting up libaprutil1:amd64 (1.6.1-4+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 85%][49m[39m [################################################################################...............] 8Setting up libldap-2.4-2:amd64 (2.4.47+dfsg-3+deb10u7) ...
+7[62;0f[42m[30mProgress: [ 87%][49m[39m [##################################################################################.............] 87[62;0f[42m[30mProgress: [ 87%][49m[39m [##################################################################################.............] 8Setting up libaprutil1-ldap:amd64 (1.6.1-4+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 89%][49m[39m [####################################################################################...........] 8Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-4+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 89%][49m[39m [####################################################################################...........] 8Setting up libgdbm-compat4:amd64 (1.18.1-4) ...
+7[62;0f[42m[30mProgress: [ 91%][49m[39m [######################################################################################.........] 87[62;0f[42m[30mProgress: [ 91%][49m[39m [######################################################################################.........] 8Setting up libperl5.28:amd64 (5.28.1-6+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 93%][49m[39m [#######################################################################################........] 8Setting up libcurl4:amd64 (7.64.0-4+deb10u9) ...
+7[62;0f[42m[30mProgress: [ 93%][49m[39m [########################################################################################.......] 8Setting up apache2-utils (2.4.59-1~deb10u1) ...
+7[62;0f[42m[30mProgress: [ 95%][49m[39m [#########################################################################################......] 87[62;0f[42m[30mProgress: [ 95%][49m[39m [##########################################################################################.....] 8Setting up perl (5.28.1-6+deb10u1) ...
+7[62;0f[42m[30mProgress: [ 97%][49m[39m [###########################################################################################....] 8Setting up apache2-bin (2.4.59-1~deb10u1) ...
+7[62;0f[42m[30mProgress: [ 97%][49m[39m [############################################################################################...] 8Setting up apache2 (2.4.59-1~deb10u1) ...
+7[62;0f[42m[30mProgress: [ 99%][49m[39m [#############################################################################################..] 8Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+7[62;0f[42m[30mProgress: [ 99%][49m[39m [##############################################################################################.] 8Processing triggers for systemd (241-7~deb10u10) ...
+Processing triggers for libc-bin (2.28-10+deb10u4) ...
+
+7[0;62r8[1A[J[?2004hroot@debian:~# apt install curl
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  curl
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 271 kB of archives.
+After this operation, 440 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://deb.debian.org/debian bullseye/main amd64 curl amd64 7.74.0-1.3+deb11u12 [271 kB]
+[33m0% [1 curl 0 B/271 kB 0%][0m[33m                         100% [Working][0m              Fetched 271 kB in 0s (662 kB/s)
+
+7[0;61r8[1ASelecting previously unselected package curl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160791 files and directories currently installed.)
+Preparing to unpack .../curl_7.74.0-1.3+deb11u12_amd64.deb ...
+7[62;0f[42m[30mProgress: [  0%][49m[39m [...............................................................................................] 87[62;0f[42m[30mProgress: [ 20%][49m[39m [###################............................................................................] 8Unpacking curl (7.74.0-1.3+deb11u12) ...
+7[62;0f[42m[30mProgress: [ 40%][49m[39m [######################################.........................................................] 8Setting up curl (7.74.0-1.3+deb11u12) ...
+7[62;0f[42m[30mProgress: [ 60%][49m[39m [#########################################################......................................] 87[62;0f[42m[30mProgress: [ 80%][49m[39m [############################################################################...................] 8Processing triggers for man-db (2.9.4-2) ...
+
+7[0;62r8[1A[J[?2004hroot@debian:~# curl 10.189.222.52
+[?2004l
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Debian Default Page: It works</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/openlogo-75.png" alt="Debian Logo" class="floating_element"/>
+        <span class="floating_element">
+          Apache2 Debian Default Page
+        </span>
+      </div>
+<!--      <div class="table_of_contents floating_element">
+        <div class="section_header section_header_grey">
+          TABLE OF CONTENTS
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#about">About</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#changes">Changes</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#scope">Scope</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#files">Config files</a>
+        </div>
+      </div>
+-->
+      <div class="content_section floating_element">
+
+
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+          It works!
+        </div>
+        <div class="content_section_text">
+          <p>
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Debian systems.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should <b>replace this file</b> (located at
+                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+          </p>
+
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          </p>
+
+        </div>
+        <div class="section_header">
+          <div id="changes"></div>
+                Configuration Overview
+        </div>
+        <div class="content_section_text">
+          <p>
+                Debian's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Debian tools. The configuration system is
+                <b>fully documented in
+                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                package was installed on this server.
+
+          </p>
+          <p>
+                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+          </p>
+          <pre>
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+                           Configuration files in the <tt>mods-enabled/</tt>,
+                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        </li>
+
+                        <li>
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           <tt>
+                                a2enmod,
+                                a2dismod,
+                           </tt>
+                           <tt>
+                                a2ensite,
+                                a2dissite,
+                            </tt>
+                                and
+                           <tt>
+                                a2enconf,
+                                a2disconf
+                           </tt>. See their respective man pages for detailed information.
+                        </li>
+
+                        <li>
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                           default configuration.
+                        </li>
+          </ul>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                Document Roots
+        </div>
+
+        <div class="content_section_text">
+            <p>
+                By default, Debian does not allow access through the web browser to
+                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+                directories (when enabled) and <tt>/usr/share</tt> (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+            </p>
+            <p>
+                The default Debian document root is <tt>/var/www/html</tt>. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            </p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+                Reporting Problems
+        </div>
+        <div class="content_section_text">
+          <p>
+                Please use the <tt>reportbug</tt> tool to report bugs in the
+                Apache2 package with Debian. However, check <a
+                href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0"
+                rel="nofollow">existing bug reports</a> before reporting a new bug.
+          </p>
+          <p>
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          </p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <div class="validator">
+    </div>
+  </body>
+</html>
+
+[?2004hroot@debian:~# [H[2Jroot@debian:~# [7msudo iptables -t nat -A PREROUTING -d 192.168.0.111 -p tcp --dport 80 -j DNAT --to-destination 10.189.[27m[7m2[27m[7m22.52:80 [27m
+[7msudo iptables -t nat -A POSTROUTING -s 10.189.222.0/24 -o enp0s3 -j MASQUERADE[27m
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo iptables -t nat -A PREROUTING -d 192.168.0.111 -p tcp --dport 80 -j DNAT --to-destination 10.189.222.52:80
+sudo iptables -t nat -A POSTROUTING -s 10.189.222.0/24 -o enp0s3 -j MASQUERADE
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7msudo iptables -t nat -A PREROUTING -d 192.168.0.111 -p tcp --dport 80 -j DNAT --to-destination 10.189.[27m[7m2[27m[7m22.52:80[27m[A[C[C[C[C[C[Csudo iptables -t nat -A PREROUTING -d 192.168.0.111 -p tcp --dport 80 -j DNAT --to-destination 10.189.222.52:80
+[?2004l[?2004hroot@debian:~# [7msudo iptables -t nat -A POSTROUTING -s 10.189.222.0/24 -o enp0s3 -j MASQUERADE[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo iptables -t nat -A POSTROUTING -s 10.189.222.0/24 -o enp0s3 -j MASQUERADE
+[?2004l[?2004hroot@debian:~# учш[K[K[Kexit
+[?2004lexit
+
+Script done on 2024-07-06 21:44:26+03:00 [COMMAND_EXIT_CODE="0"]
