@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   tasks:
-    - name: Install packages
+    - name: Установка пакетов
       apt:
         name:
           - wget
@@ -11,12 +11,12 @@
         state: present
         update_cache: yes
 
-    - name: Start Nginx service
+    - name: Запускает Nginx-сервер
       service:
         name: nginx
         state: started
         enabled: yes
 
-    - name: Display environment information
+    - name: Выводит информацию об окружении
       debug:
         msg: "This host is in {{ ansible_hostname }} environment"
