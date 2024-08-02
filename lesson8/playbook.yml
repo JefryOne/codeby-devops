@@ -1,0 +1,75 @@
+---
+- name: Настройка веб-сервера Apache
+  hosts: server
+  become: yes
+  tasks:
+    - name: Обновление пакетов
+      apt:
+        update_cache: yes
+
+    - name: Установка Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Включение модуля SSL
+      command: a2enmod ssl
+
+    - name: Создание директории для сертификатов
+      file:
+        path: /etc/apache2/ssl
+        state: directory
+        mode: '0755'
+
+    - name: Создание самоподписанного сертификата
+      command: >
+        openssl req -x509 -nodes -days 365 -newkey rsa:2048
+        -keyout /etc/apache2/ssl/server.key
+        -out /etc/apache2/ssl/server.crt
+        -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=server.local"
+      args:
+        creates: /etc/apache2/ssl/server.crt
+
+    - name: Настройка виртуального хоста
+      copy:
+        dest: /etc/apache2/sites-available/default-ssl.conf
+        content: |
+          <VirtualHost *:443>
+              ServerName server.local
+              DocumentRoot /var/www/html
+              SSLEngine on
+              SSLCertificateFile /etc/apache2/ssl/server.crt
+              SSLCertificateKeyFile /etc/apache2/ssl/server.key
+          </VirtualHost>
+
+    - name: Включение сайта
+      command: a2ensite default-ssl
+
+    - name: Перезапуск Apache
+      service:
+        name: apache2
+        state: restarted
+
+    - name: Копирование сертификата на клиент
+      fetch:
+        src: /etc/apache2/ssl/server.crt
+        dest: /tmp/
+        flat: yes
+
+- name: Настройка клиента
+  hosts: client
+  become: yes
+  tasks:
+    - name: Добавление записи в /etc/hosts
+      lineinfile:
+        path: /etc/hosts
+        line: "192.168.56.10 server.local"
+        state: present
+
+    - name: Установка сертификата в доверенные
+      copy:
+        src: /tmp/server.crt
+        dest: /usr/local/share/ca-certificates/server.crt
+
+    - name: Обновление доверенных сертификатов
+      command: update-ca-certificates
