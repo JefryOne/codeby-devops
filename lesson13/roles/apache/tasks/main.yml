@@ -1,0 +1,25 @@
+---
+- name: Установка Apache на Ubuntu
+  apt:
+    name: apache2
+    state: present
+  when: ansible_facts['os_family'] == "Debian"
+
+- name: Установка Apache на CentOS
+  yum:
+    name: httpd
+    state: present
+  when: ansible_facts['os_family'] == "RedHat"
+
+- name: Запуск и включение Apache
+  service:
+    name: "{{ apache_service_name }}"
+    state: started
+    enabled: yes
+
+- name: Копирование конфигурационного файла Apache
+  template:
+    src: apache.conf.j2
+    dest: "{{ apache_conf_path }}"
+  notify:
+    - Перезапуск Apache

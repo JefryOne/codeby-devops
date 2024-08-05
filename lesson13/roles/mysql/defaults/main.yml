@@ -1,0 +1,6 @@
+---
+mysql_root_password: "12345678"
+wordpress_db_name: "wordpress"
+wordpress_db_user: "wordpress_user"
+wordpress_db_password: "X0123458qa"
+mysql_service_name: "{{ 'mysql' if ansible_facts['os_family'] == 'Debian' else 'mariadb' }}"
