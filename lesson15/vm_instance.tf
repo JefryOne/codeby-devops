@@ -3,17 +3,9 @@ variable "zone" {
   type        = string
 }
 
-data "yandex_vpc_network" "selected_vpc" {
-  name = "VPS1"
-}
-
-data "yandex_vpc_subnet" "zone_subnet" {
-  for_each = data.yandex_vpc_network.selected_vpc.subnets
-  id       = each.value.id
-  filter {
-    name   = "zone"
-    values = [var.zone]
-  }
+variable "subnet_id" {
+  description = "Subnet ID для ВМ"
+  type        = string
 }
 
 resource "yandex_compute_instance" "vm" {
