@@ -1,0 +1,64 @@
+Script started on 2024-08-27 17:17:16+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="126" LINES="21"]
+[?2004h]0;grom@quantum: ~/17[01;32mgrom@quantum[00m:[01;34m~/17[00m$ [7mdocker network create wp-net[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker network create wp-net
+[A
+[?2004ld341b1eab7fb023376d6786f73578e3c8b36aa96d78f948be694ac1d3ef68ebf
+[?2004h]0;grom@quantum: ~/17[01;32mgrom@quantum[00m:[01;34m~/17[00m$ [7mdocker volume create wp-db[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker volume create wp-db
+[A
+[?2004lwp-db
+[?2004h]0;grom@quantum: ~/17[01;32mgrom@quantum[00m:[01;34m~/17[00m$ [7mdocker run -d \[27m
+[7m  --name wp-mysql \[27m
+[7m  --network wp-net \[27m
+[7m  -v wp-db:/var/lib/mysql \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=your_root_password \[27m
+[7m  -e MYSQL_DATABASE=wordpress \[27m
+[7m  -e MYSQL_USER=wordpress \[27m
+[7m  -e MYSQL_PASSWORD=wordpress_password \[27m
+[7m  mysql:5.7[27m
+[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d \
+  --name wp-mysql \
+  --network wp-net \
+  -v wp-db:/var/lib/mysql \
+  -e MYSQL_ROOT_PASSWORD=your_root_password \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wordpress \
+  -e MYSQL_PASSWORD=wordpress_password \
+  mysql:5.7[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \[1P \1 \2 \3 \4 \5 \6 \
+
+
+
+
+[?2004l723a194421efc7a49d42cb013f4171d31f5fb6c770e01be1da47227ab9fb28c8
+[?2004h]0;grom@quantum: ~/17[01;32mgrom@quantum[00m:[01;34m~/17[00m$ [7mdocker volume create wp-data[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker volume create wp-data
+[A
+[?2004lwp-data
+[?2004h]0;grom@quantum: ~/17[01;32mgrom@quantum[00m:[01;34m~/17[00m$ [7mdocker run -d \[27m
+[7m  --name wordpress \[27m
+[7m  --network wp-net \[27m
+[7m  -p 8080:80 \[27m
+[7m  -v wp-data:/var/www/html \[27m
+[7m  -v /path/to/your/apache/config:/etc/apache2/sites-available \[27m
+[7m  -e WORDPRESS_DB_HOST=wp-mysql:3306 \[27m
+[7m  -e WORDPRESS_DB_USER=wordpress \[27m
+[7m  -e WORDPRESS_DB_PASSWORD=wordpress_password \[27m
+[7m  -e WORDPRESS_DB_NAME=wordpress \[27m
+[7m  wordpress:latest[27m
+[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d \
+  --name wordpress \
+  --network wp-net \
+  -p 8080:80 \
+  -v wp-data:/var/www/html \
+  -v /path/to/your/apache/config:/etc/apache2/sites-available \
+  -e WORDPRESS_DB_HOST=wp-mysql:3306 \
+  -e WORDPRESS_DB_USER=wordpress \
+  -e WORDPRESS_DB_PASSWORD=wordpress_password \
+  -e WORDPRESS_DB_NAME=wordpress \
+  wordpress:latest
+[A
+[?2004l3f6a80671972789277b3f2097146821e2252ca6f88dc1b68267bdd80fb6f6640
+[?2004h]0;grom@quantum: ~/17[01;32mgrom@quantum[00m:[01;34m~/17[00m$ exit
+[?2004lexit
+
+Script done on 2024-08-27 17:18:14+03:00 [COMMAND_EXIT_CODE="0"]
