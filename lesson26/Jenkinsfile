@@ -1,0 +1,81 @@
+pipeline {
+    agent any
+    stages {
+        stage('Параллельная сборка приложений') {
+            parallel {
+                stage('Hello-world') {
+                    steps {
+                        script {
+                            dir('Hello-world') {
+                                if (hasChanges('https://github.com/JefryOne/Hello-world.git', 'Hello-world')) {
+                                    buildApp('https://github.com/JefryOne/Hello-world.git', 'Hello-world')
+                                } else {
+                                    echo 'Нет изменений в Hello-world'
+                                }
+                            }
+                        }
+                    }
+                }
+                stage('Hello-Jenkins') {
+                    steps {
+                        script {
+                            dir('Hello-Jenkins') {
+                                if (hasChanges('https://github.com/JefryOne/Hello-Jenkins.git', 'Hello-Jenkins')) {
+                                    buildApp('https://github.com/JefryOne/Hello-Jenkins.git', 'Hello-Jenkins')
+                                } else {
+                                    echo 'Нет изменений в Hello-Jenkins'
+                                }
+                            }
+                        }
+                    }
+                }
+                stage('Hello-Develop') {
+                    steps {
+                        script {
+                            dir('Hello-Develop') {
+                                if (hasChanges('https://github.com/JefryOne/Hello-Develop.git', 'Hello-Develop')) {
+                                    buildApp('https://github.com/JefryOne/Hello-Develop.git', 'Hello-Develop')
+                                } else {
+                                    echo 'Нет изменений в Hello-Develop'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+def hasChanges(repoUrl, appName) {
+    // Инициализируем переменные для хранения хеша последнего коммита
+    def lastCommitFile = "${appName}_last_commit.txt"
+    def lastCommit = ''
+    if (fileExists(lastCommitFile)) {
+        lastCommit = readFile(lastCommitFile).trim()
+    }
+
+    // Клонируем репозиторий
+    checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: repoUrl]]])
+
+    // Получаем текущий хеш коммита
+    def currentCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
+
+    if (currentCommit != lastCommit) {
+        // Сохраняем текущий хеш коммита для будущих сборок
+        writeFile file: lastCommitFile, text: currentCommit
+        return true
+    } else {
+        return false
+    }
+}
+
+def buildApp(repoUrl, appName) {
+    // Сборка, тестирование и деплой приложения
+    echo "Начинаем сборку приложения ${appName}"
+    // Преобрауем имя приложения в нижний регистр для тега Docker-обраа
+    def imageName = appName.toLowerCase()
+    // Репозиторий уже клонирован в функции hasChanges, поэтому здесь повторно не клонируем
+    sh "docker build -t ${imageName} ."
+    sh "docker run --rm ${imageName}"
+}
