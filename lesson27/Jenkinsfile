@@ -1,0 +1,89 @@
+pipeline {
+    agent any
+    stages {
+        stage('Параллельная сборка и анализ приложений') {
+            parallel {
+                stage('Hello-world') {
+                    steps {
+                        script {
+                            if (hasChanges('https://github.com/JefryOne/Hello-world.git', 'Hello-world')) {
+                                buildAndAnalyzeApp('https://github.com/JefryOne/Hello-world.git', 'Hello-world', 'hello-world')
+                            } else {
+                                echo 'Нет изменений в Hello-world'
+                            }
+                        }
+                    }
+                }
+                stage('Hello-Jenkins') {
+                    steps {
+                        script {
+                            if (hasChanges('https://github.com/JefryOne/Hello-Jenkins.git', 'Hello-Jenkins')) {
+                                buildAndAnalyzeApp('https://github.com/JefryOne/Hello-Jenkins.git', 'Hello-Jenkins', 'hello-jenkins')
+                            } else {
+                                echo 'Нет изменений в Hello-Jenkins'
+                            }
+                        }
+                    }
+                }
+                stage('Hello-Develop') {
+                    steps {
+                        script {
+                            if (hasChanges('https://github.com/JefryOne/Hello-Develop.git', 'Hello-Develop')) {
+                                buildAndAnalyzeApp('https://github.com/JefryOne/Hello-Develop.git', 'Hello-Develop', 'hello-devops')
+                            } else {
+                                echo 'Нет изменений в Hello-Develop'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+def hasChanges(repoUrl, appName) {
+    dir(appName) {
+        def lastCommitFile = "${appName}_last_commit.txt"
+        def lastCommit = ''
+        if (fileExists(lastCommitFile)) {
+            lastCommit = readFile(lastCommitFile).trim()
+        }
+
+        // Клонируем репозиторий
+        checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: repoUrl]]])
+
+        // Получаем текущий хеш коммита
+        def currentCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
+
+        if (currentCommit != lastCommit) {
+            // Сохраняем текущий хеш коммита для будущих сборок
+            writeFile file: lastCommitFile, text: currentCommit
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+def buildAndAnalyzeApp(repoUrl, appName, sonarProjectKey) {
+    echo "Начинаем сборку и анализ приложения ${appName}"
+    dir(appName) {
+        def imageName = appName.toLowerCase()
+
+        // Сборка Docker-обраа
+        sh "docker build -t ${imageName} ."
+
+        // Запуск Docker-контейнера
+        sh "docker run --rm ${imageName}"
+
+        // Анализ кода с помощью SonarQube
+        withSonarQubeEnv('SonarQube') {
+            sh "mvn sonar:sonar -Dsonar.projectKey=${sonarProjectKey}"
+        }
+
+        // Проверка Quality Gate
+        timeout(time: 1, unit: 'HOURS') {
+            waitForQualityGate abortPipeline: true
+        }
+    }
+}
